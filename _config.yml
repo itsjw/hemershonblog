@@ -1,0 +1,51 @@
+# Build settings
+permalink: /blog/:year/:title/
+markdown: kramdown
+highlighter: pygments
+gems: [jekyll-paginate]
+
+paginate: 3
+paginate_path: "/blog/page/:num/"
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
+
+# SEO settings
+title: Hemershon Silva
+description: "Apaixonado por coda"
+keywords: "Estudante da computação"
+url: http://hemershon.com
+baseurl: ""
+
+google_analytics: UA-111493883-1
+repo: https://github.com/Hemershon/Blog
+disqus_shortname: "Hemershon"
+disqus_site_shortname: "Hemershon"
+
+# Author settings
+author:
+  name: Hemershon Silva
+  job: Back-end, futuro cientista da computação
+  bio: "Apaixonado pela computação adoro programar."
+  thumb: /images/foto.jpg
+  email: hemershon@gmail.com
+  url: https://hemershon.com/
+  github: https://github.com/Hemershon
+  twitter: https://twitter.com/hemershonsilva
+  facebook: https://facebook.com
+  linkedin: https://www.linkedin.com/in/hemershon-silva-luiz-dos-santos-da-silva-22646749/
+
+# navbar pages
+navbar:
+  - slug: about
+    title: Sobre
+  - slug: blog
+    title: Blog
+  - slug: Projetos
+    title: Projetos
+
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
